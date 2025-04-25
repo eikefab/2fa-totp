@@ -1,7 +1,7 @@
 OUT_DIR=bin
 
 build:
-	go build -o $(OUT_DIR)/hmac.exe src/main.go
+	go build -o $(OUT_DIR)/hotp.exe src/main.go src/hotp.go
 
 run:
-	./bin/hmac
+	./bin/hotp
