@@ -23,7 +23,7 @@ func GenerateSecret() ([]byte, error) {
 
 func GenerateHOTP(secret []byte, counter uint64, digits int) (string, error) {
 	if digits < 6 {
-		return "", errors.New("Quantidade de dígitos deve ser de no mínimo 6 (RFC 4226).")
+		return "", errors.New("quantidade de dígitos deve ser de no mínimo 6 (RFC 4226)")
 	}
 
 	counterBytes := make([]byte, 8)
